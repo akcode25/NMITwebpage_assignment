@@ -1,0 +1,130 @@
+
+#header {
+    width:100%;
+    height: 60px;
+    background:greenyellow;
+    text-align:center;
+    overflow: auto;
+    font-size: large;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*----------------------------------*/
+#header {
+    width:100%;
+    height: 60px;
+    background:greenyellow;
+    text-align:center;
+    overflow: auto;
+    font-size: large;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+h1 {
+  overflow: hidden;
+  white-space:nowrap;
+  border-right: .15em solid green;
+  width: 0;
+  animation: typing 1.5s steps(30, end) forwards;
+}  
+@keyframes typing {
+  from { width: 30 }
+  to { width: 59% }
+}
+/*----------------------------------*/
+
+p {
+    text-align:justify;
+    font-size:large;
+    margin: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+}
+
+/*---------------------------*/
+p::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+p:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+p::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    inset: 0 0 0 0;
+    background: hsl(199, 92%, 86%);
+    z-index: -1;
+    transition: transform .4s ease;
+}
+p {
+    text-align:justify;
+    font-size:large;
+    margin: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    position:relative
+}
+/*---------------------------*/
+
+h3 {
+    color: rgb(19,19,62);
+    background-color:springgreen;
+    text-align:center;
+    font-size:x-large;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+h3{
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: 1.5;
+    animation-direction:alternate;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 100%;
+    }
+  
+    to {
+      margin-right: 0%;
+      width: 50%;
+    }
+  }
+li{ color:slateblue; }
+
+a {
+    color:rgb(0, 30, 255);
+    font-size: large;
+    line-height: 1.5;
+}
+a:visited { background-color: deeppink; }
+  
+a:hover {
+    color:forestgreen;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    font-size: 20px ; 
+  }
+
+
+
+
+
+.imageNitte:hover{
+    box-shadow: 0 12px 5px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    /*transform:scale(1.2);*/
+    
+  }   
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  .imageNitte{animation: fadeIn 5s; }
+  
+
+
+  
+  
